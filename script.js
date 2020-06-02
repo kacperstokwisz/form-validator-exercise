@@ -25,7 +25,7 @@ function isValidEmail(email){
 }
 
 // Event listener
-const aaa = function (e) {
+const validation = function (e) {
   e.preventDefault();
   if (username.value === "") {
     showError(username, "Username is required");
@@ -55,4 +55,4 @@ const aaa = function (e) {
   }
 };
 
-form.addEventListener("submit", aaa);
+form.addEventListener("submit", validation);
